@@ -1,4 +1,38 @@
 RewriteEngine on
 RewriteCond %{about} !-d
 RewriteCond %{about}\.html -f
+
+RewriteCond %{index} !-d
+RewriteCond %{index}\.html -f
+
+RewriteCond %{404} !-d
+RewriteCond %{404}\.html -f
+
+RewriteCond %{blog-details} !-d
+RewriteCond %{blog-details}\.html -f
+
+RewriteCond %{blog} !-d
+RewriteCond %{blog}\.html -f
+
+RewriteCond %{career-job} !-d
+RewriteCond %{career-job}\.html -f
+
+RewriteCond %{career} !-d
+RewriteCond %{career}\.html -f
+
+RewriteCond %{contact} !-d
+RewriteCond %{contact}\.html -f
+
+RewriteCond %{pricing} !-d
+RewriteCond %{pricing}\.html -f
+
+RewriteCond %{project} !-d
+RewriteCond %{project}\.html -f
+
+RewriteCond %{services} !-d
+RewriteCond %{services}\.html -f
+
+RewriteCond %{terms} !-d
+RewriteCond %{terms}\.html -f
+
 RewriteRule ^(.*)$ $1.html [NC,L]	
